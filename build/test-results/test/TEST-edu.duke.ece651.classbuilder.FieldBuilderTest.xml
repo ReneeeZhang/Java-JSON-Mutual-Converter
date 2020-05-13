@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.duke.ece651.classbuilder.FieldBuilderTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2020-05-12T18:16:53" hostname="yuanrui-VirtualBox" time="0.171">
+  <properties/>
+  <testcase name="test_booleanNameAndType()" classname="edu.duke.ece651.classbuilder.FieldBuilderTest" time="0.004"/>
+  <testcase name="test_isArray_false()" classname="edu.duke.ece651.classbuilder.FieldBuilderTest" time="0.006"/>
+  <testcase name="test_doubleNameAndType()" classname="edu.duke.ece651.classbuilder.FieldBuilderTest" time="0.0"/>
+  <testcase name="test_toCaptalizedName_canBeCaptalized()" classname="edu.duke.ece651.classbuilder.FieldBuilderTest" time="0.012"/>
+  <testcase name="test_isArray_true()" classname="edu.duke.ece651.classbuilder.FieldBuilderTest" time="0.001"/>
+  <testcase name="test_multiArrayNameAndType()" classname="edu.duke.ece651.classbuilder.FieldBuilderTest" time="0.012"/>
+  <testcase name="test_getFieldNameAndType_noNameExpn()" classname="edu.duke.ece651.classbuilder.FieldBuilderTest" time="0.005"/>
+  <testcase name="test_byteNameAndType()" classname="edu.duke.ece651.classbuilder.FieldBuilderTest" time="0.009"/>
+  <testcase name="test_shortNameAndType()" classname="edu.duke.ece651.classbuilder.FieldBuilderTest" time="0.004"/>
+  <testcase name="test_charNameAndType()" classname="edu.duke.ece651.classbuilder.FieldBuilderTest" time="0.001"/>
+  <testcase name="test_floatNameAndType()" classname="edu.duke.ece651.classbuilder.FieldBuilderTest" time="0.006"/>
+  <testcase name="test_longNameAndType()" classname="edu.duke.ece651.classbuilder.FieldBuilderTest" time="0.009"/>
+  <testcase name="test_toCaptalizedName_canNotBeCaptalized()" classname="edu.duke.ece651.classbuilder.FieldBuilderTest" time="0.001"/>
+  <testcase name="test_intNameAndType()" classname="edu.duke.ece651.classbuilder.FieldBuilderTest" time="0.005"/>
+  <testcase name="test_simpleJsonNameAndType()" classname="edu.duke.ece651.classbuilder.FieldBuilderTest" time="0.001"/>
+  <testcase name="test_getFieldNameAndType_noTypeExpn()" classname="edu.duke.ece651.classbuilder.FieldBuilderTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

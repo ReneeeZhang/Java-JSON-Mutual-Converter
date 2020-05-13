@@ -1,0 +1,16 @@
+{ "package": "hwk1.testing.arr",
+  "classes" :
+  [
+      {"name" : "Course", "fields" : [ {"name" : "instructor", "type" : "Faculty"},
+                                       {"name" : "numStudents", "type" : "int" },
+                                       {"name" : "grades", "type" : {"e": "Grade"}}]},
+      {"name" : "Office",  "fields" : [ {"name" : "occupant", "type": "Faculty"},
+                                        {"name" : "number", "type": "int"},
+                                        {"name" : "building" , "type": "String"}]},
+      {"name" : "Faculty", "fields" : [ {"name" : "name", "type" : "String" },
+                                        {"name" : "taught", "type" : {"e": "Course"}} ]},
+      {"name" : "Grade", "fields" : [ {"name" : "course", "type" : "Course"},
+                                      {"name" : "student", "type" : "String"},
+                                      {"name" : "grade", "type": "double"}]}
+  ]
+}

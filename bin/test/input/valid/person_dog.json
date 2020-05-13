@@ -1,0 +1,15 @@
+{ 'classes' : 
+	[
+    	{'name' : 'Person', 'fields' : [{'name' : 'name', 'type' : 'String'}, 
+    					{'name' : 'pet', 'type' : 'Dog'},
+    					{'name' : 'age', 'type' : 'int'},	
+ 					{'name' : 'pets', 'type' : {'e': 'Dog'}},
+					{'name' : 'petGroups', 'type' : {'e' : {'e' : 'Dog'}}},
+    					{'name' : 'times', 'type' : {'e': 'long'}},
+					{'name' : 'timeGroups', 'type' : {'e' : {'e' : 'int'}}}
+    					]},
+    	{'name' : 'Dog', 'fields' : [{'name' : 'name', 'type' : 'String'}, 
+    					{'name' : 'owner', 'type' : 'Person'}
+     				]}
+	]
+}

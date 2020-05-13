@@ -1,0 +1,4 @@
+{ "package" : "hwk1.testing.empty",
+   "classes" : [
+    {"name" : "Empty", "fields" : []}
+]}

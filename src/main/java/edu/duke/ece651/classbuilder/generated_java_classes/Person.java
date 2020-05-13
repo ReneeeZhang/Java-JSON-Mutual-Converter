@@ -1,0 +1,176 @@
+package edu.duke.ece651.classbuilder.generated_java_classes;
+
+import java.util.*;
+import org.json.*;
+
+public class Person {
+	private String name;
+	private Dog pet;
+	private int age;
+	private ArrayList<Dog> pets;
+	private ArrayList<Collection<Dog>> petGroups;
+	private ArrayList<Long> times;
+	private ArrayList<Collection<Integer>> timeGroups;
+
+	public Person() {
+		pets = new ArrayList<>();
+		petGroups = new ArrayList<>();
+		times = new ArrayList<>();
+		timeGroups = new ArrayList<>();	
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(String f){
+		this.name = f;
+	}
+
+	public Dog getPet() {
+		return this.pet;
+	}
+
+	public void setPet(Dog f){
+		this.pet = f;
+	}
+
+	public int getAge() {
+		return this.age;
+	}
+
+	public void setAge(int f){
+		this.age = f;
+	}
+
+	public Dog getPets(int index) {
+		return this.pets.get(index);
+	}
+
+	public void setPets(int index, Dog f) {
+		this.pets.set(index, f);
+	}
+
+	public void addPets(Dog f) {
+		this.pets.add(f);
+	}
+
+	public int numPets() {
+		return this.pets.size();
+	}
+
+	public Collection<Dog> getPetGroups(int index) {
+		return this.petGroups.get(index);
+	}
+
+	public void setPetGroups(int index, Collection<Dog> f) {
+		this.petGroups.set(index, f);
+	}
+
+	public void addPetGroups(Collection<Dog> f) {
+		this.petGroups.add(f);
+	}
+
+	public int numPetGroups() {
+		return this.petGroups.size();
+	}
+
+	public long getTimes(int index) {
+		return this.times.get(index);
+	}
+
+	public void setTimes(int index, long f) {
+		this.times.set(index, f);
+	}
+
+	public void addTimes(long f) {
+		this.times.add(f);
+	}
+
+	public int numTimes() {
+		return this.times.size();
+	}
+
+	public Collection<Integer> getTimeGroups(int index) {
+		return this.timeGroups.get(index);
+	}
+
+	public void setTimeGroups(int index, Collection<Integer> f) {
+		this.timeGroups.set(index, f);
+	}
+
+	public void addTimeGroups(Collection<Integer> f) {
+		this.timeGroups.add(f);
+	}
+
+	public int numTimeGroups() {
+		return this.timeGroups.size();
+	}
+
+
+	public JSONObject toJSON() throws JSONException {
+		Map<Object, Integer> idMap = new HashMap<>();
+		return toJSON(idMap);
+	}
+
+	public JSONObject toJSON(Map<Object, Integer> idMap) throws JSONException {
+		JSONObject ans = new JSONObject();
+		if(idMap.containsKey(this)){
+			ans.put("ref", idMap.get(this));
+			return ans;
+		}
+
+		ans.put("id", idMap.size());
+		ans.put("type", "Person");
+		idMap.put(this, idMap.size());
+
+		JSONArray values = new JSONArray();
+		JSONObject jsobj;
+		JSONArray arr;
+
+		jsobj = new JSONObject();
+		jsobj.put("name", this.name);
+		values.put(jsobj);
+
+		jsobj = new JSONObject();
+		jsobj.put("pet", this.pet.toJSON(idMap));
+		values.put(jsobj);
+
+		jsobj = new JSONObject();
+		jsobj.put("age", this.age);
+		values.put(jsobj);
+
+		jsobj = new JSONObject();
+		arr = new JSONArray();
+		for(Dog target1 : pets) {
+			arr.put(target1.toJSON(idMap));
+		}
+		jsobj.put("pets", arr);
+		values.put(jsobj);
+
+		jsobj = new JSONObject();
+		arr = new JSONArray();
+		for(Collection<Dog> target1 : petGroups) {
+			JSONArray arr1 = new JSONArray();
+			for(Dog target2 : target1) {
+				arr1.put(target2.toJSON(idMap));
+			}
+			arr.put(arr1);
+		}
+		jsobj.put("petGroups", arr);
+		values.put(jsobj);
+
+		jsobj = new JSONObject();
+		arr = new JSONArray(this.times);
+		jsobj.put("times", arr);
+		values.put(jsobj);
+
+		jsobj = new JSONObject();
+		arr = new JSONArray(this.timeGroups);
+		jsobj.put("timeGroups", arr);
+		values.put(jsobj);
+
+		ans.put("values", values);
+		return ans;
+	}
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.duke.ece651.classbuilder.generated_java_classes.DeserializerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-12T18:16:53" hostname="yuanrui-VirtualBox" time="0.025">
+  <properties/>
+  <testcase name="test_readX()" classname="edu.duke.ece651.classbuilder.generated_java_classes.DeserializerTest" time="0.025"/>
+  <system-out><![CDATA[Deserializer test:
+{"values":[{"name":"Joe"},{"pet":{"values":[{"name":"Fido"},{"owner":{"ref":0}}],"id":1,"type":"Dog"}},{"age":42},{"pets":[{"values":[{"name":"Fido1"},{"owner":{"ref":0}}],"id":2,"type":"Dog"},{"values":[{"name":"Fido2"},{"owner":{"ref":0}}],"id":3,"type":"Dog"},{"values":[{"name":"Fido3"},{"owner":{"ref":0}}],"id":4,"type":"Dog"}]},{"petGroups":[[{"values":[{"name":"Fido4"},{"owner":{"ref":0}}],"id":5,"type":"Dog"},{"values":[{"name":"Fido5"},{"owner":{"ref":0}}],"id":6,"type":"Dog"},{"values":[{"name":"Fido6"},{"owner":{"ref":0}}],"id":7,"type":"Dog"}],[{"values":[{"name":"Fido7"},{"owner":{"ref":0}}],"id":8,"type":"Dog"},{"values":[{"name":"Fido8"},{"owner":{"ref":0}}],"id":9,"type":"Dog"},{"ref":1}]]},{"times":[1,2,3]},{"timeGroups":[[4,5],[6,7,8]]}],"id":0,"type":"Person"}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

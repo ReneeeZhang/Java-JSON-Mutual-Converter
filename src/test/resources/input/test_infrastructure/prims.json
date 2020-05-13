@@ -1,0 +1,12 @@
+{ "package" : "hwk1.testing.prims",
+   "classes" : [
+       {"name" : "Prims",
+        "fields" : [{"name" : "x", "type" : "int"},
+                    {"name" : "isAwesome", "type" : "boolean"},
+                    {"name" : "ateBits", "type" : "byte"},
+                    {"name" : "boat", "type" : "float"},
+                    {"name" : "trouble", "type": "double"},
+                    {"name" : "isntPronouncedLikeCare", "type" : "char"},
+                    {"name" : "waysAway", "type": "long"},
+                    {"name" : "stackOfPancakes", "type": "short"}]}
+]}

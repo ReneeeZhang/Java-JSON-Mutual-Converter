@@ -1,0 +1,423 @@
+1.
+
+Task: Read JSON documentation to see how JSON library can help build ClassBuilder (help parse JSON)
+
+Estimated Time: 1 h
+
+Target Deadline: 01/31	11:00am 
+
+Actual Time: 1h
+
+Actual Delivery: 01/31  4:00pm
+
+Commit ID: NA
+
+Comments: NA
+
+
+
+2.
+
+Task: Implement a helper class named UniClassBuilder, addressing only one class in a JSON object.
+
+Estimated Time: 0.5 h
+
+Target Deadline: 02/01	10:00am 
+
+Actual Time: 0.5 h
+
+Actual Delivery: 02/02  3:50pm
+
+Commit ID: c261d70360631b3a83393c610c35d6e9261efb38
+
+Comments: Estimated Time matches but delay in delivery
+
+
+
+3.
+
+Task: Implement a helper class named FieldBuilder, addressing only one class in a JSON object.
+
+Estimated Time: 0.5 h
+
+Target Deadline: 02/01	10:30am 
+
+Actual Time: 3 h
+
+Actual Delivery: 02/02  15:00am
+
+Commit ID:88d25c5471330ba6be1986883ac06cf29bfb27e8
+
+Comments: It took longer than what I expected because I need to plan how these helper classes work for the major purpose. But actually, time to write part of UniClassbuilder and ClassBuilder Counts in this part. In addition, testing FieldBuilder also counts in because I forgot to commit once I finish it. 
+
+
+
+4.
+
+Task: Integrate the two helper classes to form the Classbuilder. Finish the first required constructors for ClassBuilder. Notice the exception handling.
+
+Estimated Time: 1h
+
+Target Deadline: 02/01	3:30pm 
+
+Actual Time: 0.5 h
+
+Actual Delivery: 02/03  10:00am
+
+Commit ID: a84fa72785ac25c71f67ecba0351e1d1efc4a636
+
+Comments: I finished this with testing (Task 5 together). Testing is harder than writing the method. Luckily, no big bugs encountered.
+
+
+
+5.
+
+Task: Test the constructor that takes a String for ClassBuilder. Note to test the excetions.
+
+Estimated Time: 0.5 h
+
+Target Deadline: 02/01	4:30pm 
+
+Actual Time: 1h
+
+Actual Delivery: 02/03  10:00am
+
+Commit ID:a84fa72785ac25c71f67ecba0351e1d1efc4a636
+
+Comments: Testing requires more work to do. Until now do I realize I should have started earlier.
+
+
+
+7.
+
+Task: Implement the constructor for ClassBuilder, which takes an InputStream.
+
+Estimated Time: 0.8 h
+
+Target Deadline: 02/02	10:00am 
+
+Actual Time: 1.5h
+
+Actual Delivery: 02/04  12:00pm
+
+Commit ID: (lost)
+
+Comments: It is easy to do this once finish the other constructor. But I spent a lot of time seearching how to transfer an InputStream to a String
+
+
+
+8.
+
+Task: Test the constructor that takes an InputStream. Test the exceptions.
+
+Estimated Time: 1 h
+
+Target Deadline: 02/02	11:00am 
+
+Actual Time: 1 h
+
+Actual Delivery: 02/04 4:00pm
+
+Commit ID: (lost)
+
+Comments: Generate some json files. Nothing special.
+
+
+
+9.
+
+Task: From two helper classes, implement getClassesNames(). Return the final results into an ArrayList<String>.
+
+Estimated Time: 0.6 h
+
+Target Deadline: 02/02	12:00pm 
+
+Actual Time: 0.4 h
+
+Actual Delivery: 02/03  10:00am
+
+Commit ID:a84fa72785ac25c71f67ecba0351e1d1efc4a636
+
+Comments: Implemented along with task 4 and 5. These tasks are actually co-related with each other. Bacially, I shouldn't have separated them from each other when originally planning.
+
+
+
+10.
+
+Task: Test getClassName(), including exception tests.
+
+Estimated Time: 0.5 h
+
+Target Deadline: 02/02	1:30pm 
+
+Actual Time: 0.4 h 
+
+Actual Delivery: 02/03  10:00am
+
+Commit ID:a84fa72785ac25c71f67ecba0351e1d1efc4a636
+
+Comments: Same as the task 9. Additionally, I find writing test cases is more time consuming than I expected. And I actually didn't follow the number order of my tasks.
+
+
+
+
+
+11.
+
+Task: For each single class that a JSON file contains, generate a single-class Java source code. Then consolidate all classes’ source code together as the return value.
+
+Estimated Time: 0.6 h
+
+Target Deadline: 02/02	2:30pm 
+
+Actual Time:
+
+Actual Delivery:
+
+Commit ID:
+
+Comments: I underestimated this task. See 11.1
+
+11.1
+Task: Add a method in FieldBuilder.java - bool isArray() to help check whether a field is array type so that code generating can be easier.
+
+Estimated Time: 0.6 h
+
+Target Deadline: 02/03 11:30am 
+
+Actual Time: 2h
+
+Actual Delivery: 02/03 8:00pm
+
+Commit ID: (lost)
+
+Comments: I implemented some other field-related methods encapsulated in FieldBuilder class. Luckily, it works well. No big bugs encountered.But I have to retest a bunch of cases which cost a lot of time. So a good design is important.
+
+11.2
+Task: Implement getSourceCode()
+
+Estimated Time: 1.5 h
+
+Target Deadline: 02/03	3:30pm 
+
+Actual Time: 1 h
+
+Actual Delivery: 02/04   11:00pm
+
+Commit ID: (lost)
+
+Comments: Test is more time-consuming than the method itself.
+
+
+12.
+
+Task: Implement createAllClasses(String basePath) and test it the corresponding java file is created in required path.
+
+Estimated Time: 1 h
+
+Target Deadline: 02/02	3:30pm 
+
+Actual Time: 3 h  
+
+Actual Delivery: 02/05 19:00pm
+
+Commit ID:a9f6f768647478f52842a9b83c60901f95c8ce32 
+
+Comments: I met a strange bug. Finding out what it is took way too long time....
+
+
+
+13.
+
+Task: Deal with field name with “e” and apply this case to the methods above.
+
+Estimated Time: 2 h
+
+Target Deadline: 02/02	5:30pm 
+
+Actual Time: 3 h
+
+Actual Delivery: 02/03  4:00pm
+
+Commit ID: (lost)
+
+Comments: The hardest part to think of so far. I underestimated the related tasks that should be extended to generate java code. So, I redesigned here for some time 
+
+
+
+14.
+
+Task: Test field with “e”
+
+Estimated Time: 1 h
+
+Target Deadline: 02/03	9:30am 
+
+Actual Time: 0.2h
+
+Actual Delivery: 02/03 6:00pm
+
+Commit ID: (lost)
+
+Comments: Not a big deal.
+
+
+
+15.
+
+Task: Implement getter and setter for output class’s non-array type and test them
+
+Estimated Time: 1 h
+
+Target Deadline: 02/03	10:30am 
+
+Actual Time:
+
+Actual Delivery:
+
+Commit ID:
+
+Comments: See task 11.2. Do not have to set this as a task.
+
+
+
+16.
+
+Task: Implement numX, addX, getX, and setX for output class’s array fields. Specially take care of multi-dimensional arrays.
+
+Estimated Time: 2 h
+
+Target Deadline: 02/03	1:30pm 
+
+Actual Time:
+
+Actual Delivery:
+
+Commit ID:
+
+Comments: See 11.2. Do not have to set this as a task.
+
+
+
+17.
+
+Task: Implement constructor for array fields.
+
+Estimated Time: 1 h
+
+Target Deadline: 02/03	2:30pm 
+
+Actual Time: 0.6 h
+
+Actual Delivery: 02/05 2:00pm
+
+Commit ID:09538445660dfcf08a7c2dbfd76df68fe37caacf 
+
+Comments: Not a big deal - but it shouldn't have been a task.
+
+
+
+18.
+
+Task: Test output class with array(multi-dimensional array)
+
+Estimated Time: 1 h
+
+Target Deadline: 02/03	3:30pm 
+
+Actual Time:
+
+Actual Delivery:
+
+Commit ID:
+
+Comments: See 11.2. Test here is trivial. Do not have set this a task.
+
+
+
+19.
+
+Task: Test output class with array(multi-dimensional array)
+
+Estimated Time: 1 h
+
+Target Deadline: 02/03	4:30pm 
+
+Actual Time:
+
+Actual Delivery:
+
+Commit ID:
+
+Comments:  See 11.2. Test here is trivial. Do not have set this a task.
+
+
+
+20.
+
+Task: Implement toJSON() and test
+
+Estimated Time: 5 h
+
+Target Deadline: 02/04	6:30pm 
+
+Actual Time:
+
+Actual Delivery:
+
+Commit ID:
+
+Comments: Should be broken down more.
+
+
+20.1
+
+Task: Implement toJSON() by hand and test on example java - Person.java and Dog.java
+
+Estimated Time: 5 h
+
+Target Deadline: 02/06	3:30pm 
+
+Actual Time: 5 h
+
+Actual Delivery: 02/06 5pm
+
+Commit ID: 16a4335ea486f9f57ed52d9b12cce1666725871d
+
+Comments: Really hard part. I have underestimated it a lot. If I can start earlier, thing can be really easier. A big lesson I have took.
+
+
+20.2
+
+Task: generate toJSON() actual code for each class. Apply the same test strategy as 20.1
+
+Estimated Time: 2.5h
+
+Target Deadline: 02/06   8:00pm
+
+Actual Time: 2.5h
+
+Actual Delivery: 02/06   19:50pm       
+
+Commit ID: d5cdde9499e63778e2aa817a37e44056aa0910c8
+
+Comments: Finally an in-time delivery. If planning deliberately, no need to write code or debug for a long time.
+
+
+21.
+
+Task: Implement Deserializer and test
+
+Estimated Time: 5 h
+
+Target Deadline: 02/05	6:30pm 
+
+Actual Time:
+
+Actual Delivery:
+
+Commit ID:
+
+Comments: Can not finish this due to a late start and an unwise plan. It taught me a huge lesson. It left three hours for me to try to finish it but failed. Before submitting, I check again my test coverage. Unfortuatenately, I don't use the test infrastructure.
+
+Note that Person.java and Dog.java are just for testing toJSON(), which should be counted in required test coverage.

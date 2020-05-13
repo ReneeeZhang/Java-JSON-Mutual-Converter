@@ -1,0 +1,17 @@
+{ "package" : "hwk1.testing.nameref",
+  "classes" :
+  [
+      {"name" : "Course", "fields" : [ {"name" : "instructor", "type" : "Faculty"},
+                                       {"name" : "numStudents", "type" : "int" }]},
+      {"name" : "Office",  "fields" : [ {"name" : "occupant", "type": "Faculty"},
+                                        {"name" : "number", "type": "int"},
+                                        {"name" : "building" , "type": "String"}]},
+      {"name" : "Faculty", "fields" : [ {"name" : "name",
+                                         "type" : "String"},
+                                        { "name" : "courses",
+                                          "type": { "e" : "Course" }}]},
+      {"name" : "Grade", "fields" : [ {"name" : "course", "type" : "Course"},
+                                      {"name" : "student", "type" : "String"},
+                                      {"name" : "grade", "type": "double"}]}
+  ]
+}

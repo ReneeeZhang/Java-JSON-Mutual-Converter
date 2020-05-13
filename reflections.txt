@@ -1,0 +1,40 @@
+1.
+Yes, there were a few. I underestimated tasks about InputStream to String
+and file generating and overestimated tasks about testing.
+
+I find tasks that are hard to understand or abstract are especially difficult to estimate.
+
+No, I don't. The only thing I know is that I am not proficient enough to finish, not to mention to estimate.
+Hopefull, after I get through more projects, I will get precise about estimating.
+
+2.
+Not so well. Always behind my expectations. I haven't done the whole requirement yet due to a late start but tried best to
+catch up with.
+
+3.(1)
+Not easy. Although I thought about it at the beginning, I ended up with stopping trying to make perfect when
+I can't even finish the basic requirement. For this reflection, it is hard to change the output language because
+my implementation kindof hardcoded the output to a Java specific format.
+
+3.(2)
+Not easy. Because what I took as inputs is only JSON formatting, not reserving any other interfaces for other
+input formats.
+
+3.(3)
+Impossible. Since I don't even finish the basic requirement to deserialize, never consider about this reflection.
+Honestly, I don't think these three points really make a difference given that most of us can't even complete the
+minimum requirements. Such compatibility is another level.
+
+4.
+Sure. If I had known now that this project were this hard, I would have definitely stopped searching any internships and have
+started early. Yes, it is. I applied open-close and single responsibility design patterns to improve my FieldBuilder so that
+a better encapsulation was provided.
+
+5.
+(1) As early as possible.
+(2) Be realistic. Stop dreaming getting an internship this sememster as well as doing well in all the course projects.
+(3) First thing first. Courses should be more important than internships when you are feeling overwhelmed.
+(4) Arrange your time reasonablly.
+(5) From now on, I will try my best to reschedule my goal this semester. I can predict I would learn a lot if I make an
+    adjustment right now.
+(6) Incremental testing is significant.

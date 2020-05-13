@@ -1,0 +1,22 @@
+package edu.duke.ece651.classbuilder;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.io.IOException;
+
+import org.junit.jupiter.api.Test;
+
+public class TestWithGivenExamples {
+  @Test
+  public void test_() {
+
+  }
+
+  private void generateExampleJava(String inputFile, String basePath) throws IOException {
+        InputStream is = getClass().getResourceAsStream("/input/valid/" + inputFile);
+    ClassBuilder cb = new ClassBuilder(is);
+    cb.createAllClasses("src/test/resources/output/" + basePath);
+
+  }
+
+}

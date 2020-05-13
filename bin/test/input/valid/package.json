@@ -1,0 +1,5 @@
+{ 'classes' : [
+    {'name' : 'Test', 'fields' : [{'name' : 'car', 'type' : 'int'}]}
+],
+  'package' : 'edu.duke.ece651.hwk1.data'
+}

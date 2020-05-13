@@ -1,0 +1,3 @@
+{ 'classes' : [
+    {'name' : 'Test_Invalid', 'fields' : [{'name' : 'x', 'type' : 'int'}]}
+]}

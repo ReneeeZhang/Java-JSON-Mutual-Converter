@@ -1,0 +1,12 @@
+{ "package" : "hwk1.testing.crazyarray",
+   "classes" : [
+       {"name" : "LotsOfArray",
+        "fields" : [{"name" : "x", "type" : {"e": "int"}},
+                    {"name" : "isAwesome", "type" : {"e": {"e": "boolean"}}},
+                    {"name" : "ateBits", "type" : {"e": {"e": {"e":"byte"}}}},
+                    {"name" : "boat", "type" : {"e": {"e": {"e": {"e" :"float"}}}}},
+                    {"name" : "trouble", "type": {"e":"double"}},
+                    {"name" : "isntPronouncedLikeCare", "type" : {"e": {"e":"char"}}},
+                    {"name" : "waysAway", "type": {"e" :"long"}},
+                    {"name" : "stackOfPancakes", "type": {"e": {"e": "short"}}}]}
+]}
